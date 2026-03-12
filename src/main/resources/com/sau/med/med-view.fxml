@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="470.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sau.med.controller.MainController">
+    <tabs>
+        <Tab text="Patients">
+            <content>
+                <fx:include source="patient.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="Doctors">
+            <content>
+                <fx:include source="doctor.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="Appointments">
+            <content>
+                <fx:include source="appointment.fxml"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

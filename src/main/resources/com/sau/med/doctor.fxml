@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.sau.med.controller.DoctorController"
+            prefHeight="230.0" prefWidth="450.0">
+    <children>
+        <Label layoutX="24.0" layoutY="24.0" text="ID:"/>
+        <Label layoutX="24.0" layoutY="57.0" text="NAME:"/>
+        <Label layoutX="24.0" layoutY="90.0" text="CLINIQUE:"/>
+
+        <TextField fx:id="doctorId" layoutX="110.0" layoutY="20.0" prefWidth="180.0"/>
+        <TextField fx:id="name" layoutX="110.0" layoutY="53.0" prefWidth="180.0"/>
+        <TextField fx:id="clinique" layoutX="110.0" layoutY="86.0" prefWidth="180.0"/>
+
+        <Button fx:id="getDoctor" layoutX="310.0" layoutY="20.0" mnemonicParsing="false" onAction="#getDoctor" text="GET"/>
+        <Button fx:id="clearDoctor" layoutX="310.0" layoutY="86.0" mnemonicParsing="false" onAction="#clearDoctor" text="CLEAR"/>
+
+        <Button fx:id="saveDoctor" layoutX="34.0" layoutY="178.0" mnemonicParsing="false" onAction="#saveDoctor" text="SAVE"/>
+        <Button fx:id="updateDoctor" layoutX="104.0" layoutY="178.0" mnemonicParsing="false" onAction="#updateDoctor" text="UPDATE"/>
+        <Button fx:id="deleteDoctor" layoutX="188.0" layoutY="178.0" mnemonicParsing="false" onAction="#deleteDoctor" text="DELETE"/>
+        <Button fx:id="close" layoutX="272.0" layoutY="178.0" mnemonicParsing="false" onAction="#close" text="CLOSE"/>
+    </children>
+</AnchorPane>
